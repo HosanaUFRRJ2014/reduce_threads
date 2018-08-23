@@ -1,6 +1,6 @@
 # reduce_threads
 Uma implementação de uma função de reduce em C usando threads para o cumprimento do primeiro trabalho da disciplina de TEPC.
-
+Uma função de reduce consiste em somar todos os elementos de um vetor.
 
 ## Breve introdução
 
@@ -26,3 +26,7 @@ A parelização ou modernização de código consistiu em colocar dado número d
     
 ### Código paralelo
     ./reduce_threads <tamanho_vetor> <num_threads>
+
+
+## Testes
+Nos testes, o código sequencial mostrou-se mais rápido do que o paralelizado. Acredita-se que isso ocorreu porque o custo de criação e gerenciamento de threads não compensa a realização de partes do somatório de elementos de forma paralela.
